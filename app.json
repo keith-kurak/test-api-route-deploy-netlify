@@ -19,11 +19,16 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
+      "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
+      [
+        "expo-router",
+        {
+          "origin": "https://test-api-route-deploy-vercel-mqvoslqjr-keith-kuraks-projects.vercel.app/"
+        }
+      ],
       [
         "expo-splash-screen",
         {
